@@ -8,11 +8,5 @@ import {AnnouncementsService} from './services/announcements.service';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App implements OnInit {
-  announcements = inject(AnnouncementsService);
-  ngOnInit(): void {
-    this.announcements.latestAnnouncement().subscribe(announcements => {
-      console.log(announcements);
-    })
-  }
+export class App {
 }

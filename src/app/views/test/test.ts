@@ -11,6 +11,7 @@ export class Test implements OnInit{
   announcements = inject(AnnouncementsService);
   ngOnInit(): void {
     this.announcements.latestAnnouncement().subscribe(announcements => {
+      console.log('i be here');
       console.log(announcements);
     })
   }
