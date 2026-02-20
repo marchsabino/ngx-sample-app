@@ -12,4 +12,9 @@ export class AnnouncementsService {
   latestAnnouncement(): Observable<any> {
     return this.http.get(`${this.BASE_URL}/latest-announcement`);
   }
+
+
+  whoami(): Observable<any> {
+    return this.http.get(`${this.BASE_URL}/whoami`);
+  }
 }

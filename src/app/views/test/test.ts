@@ -14,5 +14,8 @@ export class Test implements OnInit{
       console.log('i be here');
       console.log(announcements);
     })
+    this.announcements.whoami().subscribe(whoami => {
+      console.log(whoami);
+    })
   }
 }
